@@ -10,10 +10,10 @@ document.addEventListener('DOMContentLoaded', () => {
     function createColumn(x) {
         for (let i = 0; i < numRows; i++) {
             const matrixChar = document.createElement('div');
-            matrixChar.className = 'matrix-char';
+            matrixChar.className = 'matrix-cha';
             matrixChar.style.left = `${x}px`;
             matrixChar.style.top = `${i * charHeight}px`;
-            matrixChar.style.animationDuration = `${Math.random() * 2 + 1}s`; // Tempo de animação aleatório
+            matrixChar.style.animationDuration = `${Math.random() * 0+ 0}s`; // Tempo de animação aleatório
             matrixChar.textContent = chars.charAt(Math.floor(Math.random() * chars.length));
             matrixBackground.appendChild(matrixChar);
         }
